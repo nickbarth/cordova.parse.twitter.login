@@ -27,7 +27,7 @@ window.iOSTwitterLogin(function (err, session) {
   cordova plugin add https://github.com/nickbarth/cordova.parse.twitter.login.git
 ```
 
-**NOTE**: You'll also need to configure your Parse and Twitter credentials in your AppDelegate.m:
+**NOTE**: You'll also need to configure your Parse and Twitter credentials in your AppDelegate.
 
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
