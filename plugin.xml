@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova.parse.facebook.login" version="1.0.0">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <name>iOSTwitterLogin</name>
+  <description>Plugin for iOS to retrieve the TwitterLogin.</description>
+  <author>Nick Barth</author>
+  <keywords>iOS TwitterLogin</keywords>
+  <license>MIT</license>
+
+  <!-- JavaScript interface -->
+  <js-module src="www/iOSTwitterLogin.js" name="iOSTwitterLogin" target="www/iOSTwitterLogin.js">
+    <clobbers target="window.iOSTwitterLogin" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="plugins">
+      <feature name="iOSTwitterLogin">
+        <param name="ios-package" value="iOSTwitterLogin"/>
+        <param name="onload" value="true" />
+      </feature>
+      <plugin name="iOSTwitterLogin" value="iOSTwitterLogin"/>
+    </config-file>
+    <header-file src="src/ios/iOSTwitterLogin.h" />
+    <source-file src="src/ios/iOSTwitterLogin.m" />
+
+    <!-- System frameworks -->
+    <framework src="Accounts.framework" />
+    <framework src="AudioToolbox.framework" />
+    <framework src="CFNetwork.framework" />
+    <framework src="CoreGraphics.framework" />
+    <framework src="CoreLocation.framework" />
+    <framework src="Foundation.framework" />
+    <framework src="MobileCoreServices.framework" />
+    <framework src="QuartzCore.framework" />
+    <framework src="Security.framework" />
+    <framework src="Social.framework" />
+    <framework src="StoreKit.framework" />
+    <framework src="SystemConfiguration.framework" />
+    <framework src="libz.dylib" />
+  </platform>
+</plugin>
