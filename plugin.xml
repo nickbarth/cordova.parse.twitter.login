@@ -7,7 +7,7 @@
   <description>Plugin for iOS to retrieve the TwitterLogin.</description>
   <author>Nick Barth</author>
   <keywords>iOS TwitterLogin</keywords>
-  <license>MIT</license>
+  <license>CC0</license>
 
   <!-- JavaScript interface -->
   <js-module src="www/iOSTwitterLogin.js" name="iOSTwitterLogin" target="www/iOSTwitterLogin.js">
